@@ -1,0 +1,61 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ .carousel-item {
+   height: 700px; /* Set the desired height here */
+ }
+
+ .card-grid {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+   gap: 20px; /* Adjust the gap between cards */
+ }
+ 
+ /* Style individual cards */
+ .card {
+   width: 18rem;
+   border: 1px solid #ccc;
+   padding: 20px;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   transition: transform 0.2s;
+ }
+ 
+ .card:hover {
+   transform: translateY(-5px); /* Add a subtle hover effect */
+ }
+
+ .card {
+   width: 18rem;
+ }
+
+ .card img {
+   max-height: 200px; /* Adjust the value to set the maximum image height */
+ }
+
+ .card-grid {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+ }
+
+ .py-5 {
+   border: 2px solid #000; /* You can change the border color as needed */
+   width: 100%; /* Set the width to 100% */
+   padding: 20px; /* Add some padding to make the border visible */
+ }
+
+
+ /* # https://api.unsplash.com/search/photos?page=1&query=laptop&client_id=4XSaQK6ohB4QH9VCGAzxkiAPL-uhUHyPKpfrKzNsKow 
