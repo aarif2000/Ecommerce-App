@@ -72,3 +72,8 @@ group :test do
   gem "selenium-webdriver"
 
 end
+
+gem "activeadmin", "~> 3.0"
+gem 'sassc'
+
+gem 'faker'
